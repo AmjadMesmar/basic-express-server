@@ -43,12 +43,13 @@ app.put('/person/:name', (req, res) => {
 });
 
 
-// //localhost:5000/middleware
-// app.get('/middleware', validator(343), (req, res) => {
-//     res.json({
-//         name: req.query.name
-//     });
-// });
+//localhost:5000/middleware
+
+/*app.get('/middleware', validator(343), (req, res) => {
+    res.json({
+        name: req.query.name
+    });
+});  */
 
 app.use('*', notFoundHandler);
 app.use(errorHandler);
