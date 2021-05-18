@@ -11,8 +11,14 @@ app.use(express.json());
 app.use(logger);
 
 
+app.get('/', (req, res) => {
+    res.send('Welcome to my server! :)');
+});
+
+// app.use(validator);
+
 //localhost:5000/person?name=Amjad
-app.get('/person', (req, res) => {
+app.get('/person',validator,(req, res) => {  //another use of middleware
     const personOutput = {
         name: req.query.name
     }
@@ -29,7 +35,6 @@ app.get('/person/:name', (req, res) => {
 
 //POST
 app.post('/person', (req, res) => {
-    console.log(req.body);
     res.json(req.body);
 });
 
@@ -45,7 +50,6 @@ app.put('/person/:name', (req, res) => {
 //     });
 // });
 
-app.use(validator);
 app.use('*', notFoundHandler);
 app.use(errorHandler);
 
