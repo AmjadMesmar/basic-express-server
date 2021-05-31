@@ -18,9 +18,9 @@ A basic express server that can use CRUD operations, it also includes server mod
 
 - [Actions](https://github.com/AmjadMesmar/basic-express-server/actions)
 
-- [Submission Pull Request](https://github.com/AmjadMesmar/basic-express-server/pull/4)
+- [Submission Pull Request](https://github.com/AmjadMesmar/basic-express-server/pull/5)
 
-- [Action Report](https://souls-basic-express-server.herokuapp.com/)
+- [Heroku](https://souls-basic-express-server.herokuapp.com/)
 
 <hr>
 
